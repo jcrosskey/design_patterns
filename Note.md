@@ -1,7 +1,14 @@
-## Design Principle
+## OO Basics
 
-* Identify the aspects of your application that vary and separate them from what stays the same. Take what varies and "encapsulate" it.
-* Program to an interface, not an implementation.
-* Favor composition over inheritance.
-* Strive for loosely coupled designs between objects that interact.
+* Abstraction
+* Encapsulation
+* Polymorphism
+* Inheritance
 
+## OO principles
+* Encapsulate what varies
+* Favor composition over inheritance
+* Program to interfaces, not implementations
+* Strive for loosely coupled designs between objects that interact
+* Classes should be open for extension, but closed for modification.
+    - Applying the open-closed principle EVERYWHERE is wasteful and unnecessary, and can lead to complex, hard-to-understand code.
