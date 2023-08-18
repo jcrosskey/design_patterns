@@ -58,3 +58,49 @@ Factory methods are a natural way to implement your product methods in your abst
    you don't know ahead of time all the concrete classes needed.
 1. Abstract Factory should be used whenever you have families of products you need to create and you want to make sure
    your clients create products that belong together.
+
+## Command Pattern
+The Command Pattern encapsulates a request as an object, thereby letting you
+parameterize other objects with different requests, queue or log requests,
+and support undoable operations.
+
+A command object encapsulates a request by binding together a set of actions on
+a specific receiver.
+
+The meta command pattern allows one to create macros of commands so that one can
+execute multiple commands at once.
+
+In addition to `execute` and `undo`, commands may also be used to implement logging
+and transactional systems. This can by done by add methods such as `log`, `store`, `load`.
+
+## Adapter Pattern
+
+The Adapter Pattern converts the interface of a class into another interface the clients expect. Adapter lets classes
+work together that couldn't otherwise because of incompatible interfaces.
+
+An adapter doesn't always hold one and only one adaptee, it can hold two or more adaptees.
+
+There are object adapter and class adapter. The latter needs multiple inheritance language to implement, the adapter
+class needs to subclass both the adaptee and the target classes.
+
+OO design principles used:
+* object composition: adapter wraps the adaptee with an altered interface
+* program to interface: adapter binds the client to an interface, not an implementation. If the adaptee's interface
+  changes, the adapter can encapsulate this change, and the client doesn't have to modify its code.
+
+## Facade Pattern
+
+The Facade Pattern provides a unified interface to a set of interfaces in a subsystem. Facade defines a higher-level
+interface that makes the subsystem easier to use.
+
+It does not "encapsulate" the subsystem classes, instead it provides a simplified interface to their functionality while
+still exposing the full functionality of the system to those who may need it.
+
+You can implement more than 1 facade for a subsystem.
+
+OO design principles used:
+* decoupling: Facade decouples the client implementation from any one subsystem.
+
+Decorator: Doesn't alter the interface, but adds responsibility.
+Adapter: Converts one interface to another.
+Facade: Makes an interface simpler.

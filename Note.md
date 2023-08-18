@@ -22,3 +22,13 @@
         1. No variable should hold a reference to a concrete class
         1. No class should derive from a concrete class
         1. No method should override an implemented method of any of its base classes
+* Principle of Least Knowledge: talk only to your immediate friends.
+    - Reduce the interactions (dependency) between objects to just a few close "friends". (Python does not have this
+      concept)
+    - If there are a large number of classes coupled together, changes in one part of the system cascade to other parts,
+      making it costly to maintain and hard for others to understand.
+    - Guidelines. From any method in any object, we should only invoke methods that belong to:
+        1. The object itself
+        1. Objects passed in as a parameter to the method
+        1. Any object the method creates or instantiates
+        1. Any components of the object (object HAS A component)
