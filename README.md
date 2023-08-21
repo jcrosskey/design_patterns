@@ -104,3 +104,21 @@ OO design principles used:
 Decorator: Doesn't alter the interface, but adds responsibility.
 Adapter: Converts one interface to another.
 Facade: Makes an interface simpler.
+
+## Template Method Pattern
+
+The Template Method Pattern defines the skeleton of an algorithm in an operation, deferring some steps to subclasses.
+Template Method lets subclasses redefine certain steps of an algorithm without changing the algorithm's structure.
+
+Its abstract class can define concrete methods, abstract methods, and hooks. Hooks do nothing or default behavior in the
+abstract class, but may be overridden in the subclass. Some uses of hooks:
+1. for a subclass to implement an optional part of an algorithm
+1. give the subclass a chance to react to some step in teh template method that's about to happen (e.g. log messages,
+   save checkpoint, etc. Think about git hooks.)
+1. provide a subclass with the ability to make a decision for the abstract class.
+
+Hollywood Principle guides us to put decision making in high-level modules that can decide how and when to call
+low-level modules.
+
+Related patterns: strategy (using composition while template method uses inheritance, both encapsulate algorithms); factory method (a specialization
+of template method).
