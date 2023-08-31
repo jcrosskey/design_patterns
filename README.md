@@ -120,5 +120,10 @@ abstract class, but may be overridden in the subclass. Some uses of hooks:
 Hollywood Principle guides us to put decision making in high-level modules that can decide how and when to call
 low-level modules.
 
-Related patterns: strategy (using composition while template method uses inheritance, both encapsulate algorithms); factory method (a specialization
-of template method).
+Related patterns: strategy (using composition while template method uses inheritance, both encapsulate algorithms); factory method (a specialization of template method).
+
+## Iterator Pattern
+
+The Iterator Pattern provides a way to access the elements of an aggregate object sequentially without exposing its underlying representation.
+
+External iterator lets the client control the iteration by calling `next()` to get the next element. An **internal** iterator is controlled by the iterator itself.

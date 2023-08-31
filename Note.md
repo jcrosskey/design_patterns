@@ -33,3 +33,4 @@
         1. Any object the method creates or instantiates
         1. Any components of the object (object HAS A component)
 * Hollywood Principle: Don't call us, we'll call you.
+* A class should have only one reason to change.

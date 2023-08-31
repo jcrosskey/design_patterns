@@ -14,12 +14,17 @@ abstract class, but may be overridden in the subclass. Some uses of hooks:
 Hollywood Principle guides us to put decision making in high-level modules that can decide how and when to call
 low-level modules.
 
-Related patterns: strategy (using composition while template method uses inheritance, both encapsulate algorithms); factory method (a specialization
-of template method).
+Related patterns: strategy (using composition while template method uses inheritance, both encapsulate algorithms);
+factory method (a specialization of template method).
 '''
 from abc import ABC
 from abc import abstractmethod
 # A trivial example
+
+class CacheError(Exception):
+    """
+    Exception raised for errors in loading/reading cache.
+    """
 
 class AbsClass(ABC):
 
