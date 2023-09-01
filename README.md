@@ -113,7 +113,7 @@ Template Method lets subclasses redefine certain steps of an algorithm without c
 Its abstract class can define concrete methods, abstract methods, and hooks. Hooks do nothing or default behavior in the
 abstract class, but may be overridden in the subclass. Some uses of hooks:
 1. for a subclass to implement an optional part of an algorithm
-1. give the subclass a chance to react to some step in teh template method that's about to happen (e.g. log messages,
+1. give the subclass a chance to react to some step in the template method that's about to happen (e.g. log messages,
    save checkpoint, etc. Think about git hooks.)
 1. provide a subclass with the ability to make a decision for the abstract class.
 
@@ -122,8 +122,17 @@ low-level modules.
 
 Related patterns: strategy (using composition while template method uses inheritance, both encapsulate algorithms); factory method (a specialization of template method).
 
-## Iterator Pattern
+## Iterator and Composite Pattern
 
-The Iterator Pattern provides a way to access the elements of an aggregate object sequentially without exposing its underlying representation.
+**The Iterator Pattern** provides a way to access the elements of an aggregate object sequentially without exposing its underlying representation.
 
 External iterator lets the client control the iteration by calling `next()` to get the next element. An **internal** iterator is controlled by the iterator itself.
+
+**Composite Pattern**
+[ ] TBD
+
+## State Pattern
+
+### Used Principles
+* Open-Close
+* Single responsibility
